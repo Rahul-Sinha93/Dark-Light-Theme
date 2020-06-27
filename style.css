@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     display: flex;
@@ -7,9 +8,14 @@ body{
     justify-content: center;
     height: 100vh;
     margin: 0;
+    transition: background 0.2s linear;
+    flex-direction: column;
 }
 body.dark{
     background-color: #292C35;
+}
+body.dark p{
+    color: #fff;
 }
 .checkbox{
     opacity: 0;
@@ -25,6 +31,7 @@ body.dark{
     align-items: center;
     justify-content: space-between;
     padding: 5px;
+    transform: scale(1.5);
 }
 
 .ball{
@@ -42,11 +49,12 @@ body.dark{
     transform: translateX(24px);
 }
 
-.fa-moon{
+.fa-frown-o{
     color: #f1c40f;
 }
 
-.fa-sun{
-    color: #f39c12;
+.fa-smile-o{
+    color: #ff99ff;
 }
+
 
